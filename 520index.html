@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情人节的告白</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: pink;
+    }
+    .box{
+        width: 120px;
+        height: 120px;
+        background: red;
+        margin: 200px auto;
+        margin-bottom: 80px;
+        transform: rotate(45deg) scale(0.9);
+        animation: love 1s infinite ;
+        box-shadow: 0 0 20px rgba(255,0,0,0.7);
+        position: relative;
+    }
+    .box::before,
+    .box::after {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: red;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(255,0,0,0.7);
+    }
+    .box::after {
+        top: -60px;
+    }
+    .box::before {
+        left: -60px;
+    }
+@keyframes  love {
+    0%{
+        transform: rotate(45deg) scale(0.85);
+    }
+    50%{
+        transform: rotate(45deg) scale(1);
+    }
+    100%{
+        transform: rotate(45deg) scale(0.85);
+    }
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 520;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>世间美好万千，唯独你让我心动不已，我喜欢你，想与你朝夕相伴，永不分离</p>
+    <p>只要有你，每天都是情人节</p>
+    <p>爱你老己，明天见</p>
+</body>
+</html>
